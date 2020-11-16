@@ -10,7 +10,7 @@ function enterNames() {
     //split all the names by commas
     let names = nameInput.value.split(",");
 
-    //display all names below the button by creating new "name" divs
+    //display all split names below the button by creating new "name" divs
     for (name of names) {
         const newName = document.createElement("div");
         newName.classList.add("name");

@@ -2,8 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
 
 :root {
-  --green: rgba(19, 101, 108, 1);
-  --orange: rgba(238, 188, 174, 1);
+  --grey: rgba(50, 50, 50, 1);
+  --black: #000000;
+  --off-white: #c7c6c6;
+  --yellow: #f4e17a;
 }
 
 body {
@@ -13,51 +15,61 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background: rgb(73, 72, 72);
+  background: linear-gradient(45deg, var(--grey) 0%, var(--black) 100%);
 }
 /* title  styling*/
 h1 {
   font-family: 'Oswald', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
+  color: var(--off-white);
   font-size: 7rem;
   margin-bottom: 0.2rem;
 }
 /* input text box styling */
 #name-input {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 100;
-  font-size: 1.4rem;
   width: 28rem;
   border: none;
-  border-bottom: 1px solid grey;
+  border-bottom: 0.5px solid var(--yellow);
+  background: transparent;
   margin-bottom: 1rem;
+}
+input::placeholder {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.4rem;
+  font-weight: lighter;
+  color: var(--off-white);
+}
+input:focus {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.4rem;
+  font-weight: lighter;
+  color: var(--off-white);
+  outline: none;
 }
 /* select button  styling*/
 button {
   width: 28rem;
   height: 3rem;
-  border: 1px solid black;
+  border: 0px;
   background-color: grey;
-  color: white;
+  color: var(--off-white);
   font-family: 'Oswald', sans-serif;
   font-size: 1.5rem;
   background: rgb(73, 72, 72);
-  background: linear-gradient(
-    45deg,
-    rgba(73, 72, 72, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  background: linear-gradient(45deg, var(--grey) 0%, var(--black) 100%);
 }
 /* name styling */
 .name {
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
   font-size: 2rem;
-  color: lightsalmon;
+  color: var(--yellow);
 }
 .name.selected {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 2rem;
   color: white;
-  background-color: lightsalmon;
+  background-color: var(--yellow);
 }
