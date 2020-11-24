@@ -59,6 +59,9 @@ button {
   background: rgb(73, 72, 72);
   background: linear-gradient(45deg, var(--grey) 0%, var(--black) 100%);
 }
+button:focus {
+  outline: none;
+}
 /* name styling */
 .name {
   font-family: 'Oswald', sans-serif;
@@ -72,4 +75,10 @@ button {
   font-size: 2rem;
   color: white;
   background-color: var(--yellow);
+}
+.name.chosen {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  color: var(--off-white);
 }
